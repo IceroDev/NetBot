@@ -62,7 +62,11 @@ module.exports = async (client) => {
             "ms) [[Visiter le site]](https://netheberg.fr)";
         }
         if (siteV.data.statusInfo.sitewebAccessible == false) {
-          var site = ":x: | Site Web";
+          var site = ":x: | Site Web Erreur: " +
+            siteV.data.statusInfo.statusCode +
+            " (" +
+            siteV.data.statusInfo.error +
+            ")";
         }
 
         if (manager.data.pingInfo.avg > VHping) {
@@ -77,14 +81,18 @@ module.exports = async (client) => {
             manager.data.pingInfo.avg +
             "ms)";
         }
-        if (managersiteV.data.statusInfo.sitewebAccessible) {
+        if (manager.data.statusInfo.sitewebAccessible) {
           var ma =
             ":white_check_mark: | Espace Client (" +
             manager.data.pingInfo.avg +
             "ms) [[Visiter le site]](https://manager.netheberg.fr)";
         }
         if (manager.data.statusInfo.sitewebAccessible == false) {
-          var ma = ":x: | Espace Client";
+          var ma = ":x: | Espace Client Erreur: " +
+          manager.data.statusInfo.statusCode +
+          " (" +
+          manager.data.statusInfo.error +
+          ")";
         }
 
         if (plesk1.data.pingInfo.avg > VHping) {
@@ -99,14 +107,18 @@ module.exports = async (client) => {
             plesk1.data.pingInfo.avg +
             "ms)";
         }
-        if (plesk1siteV.data.statusInfo.sitewebAccessible) {
+        if (plesk1.data.statusInfo.sitewebAccessible) {
           var p1 =
             ":white_check_mark: | Plesk (particulier) (" +
             plesk1.data.pingInfo.avg +
             "ms) [[Vers le panel]](https://monplesk.eu)";
         }
         if (plesk1.data.statusInfo.sitewebAccessible == false) {
-          var p1 = ":x: | Plesk (particulier)";
+          var p1 = ":x: | Plesk (particulier) Erreur: " +
+          plesk1.data.statusInfo.statusCode +
+          " (" +
+          plesk1.data.statusInfo.error +
+          ")";
         }
 
         if (plesk2.data.pingInfo.avg > VHping) {
@@ -121,14 +133,18 @@ module.exports = async (client) => {
             plesk2.data.pingInfo.avg +
             "ms)";
         }
-        if (plesk2siteV.data.statusInfo.sitewebAccessible) {
+        if (plesk2.data.statusInfo.sitewebAccessible) {
           var p2 =
             ":white_check_mark: | Plesk (professionnel) (" +
             plesk2.data.pingInfo.avg +
             "ms) [[Vers le panel]](https://web01.holycloud.fr:8443)";
         }
         if (plesk2.data.statusInfo.sitewebAccessible == false) {
-          var p2 = ":x: | Plesk (professionnel)";
+          var p2 = ":x: | Plesk (professionnel) Erreur: " +
+          plesk2.data.statusInfo.statusCode +
+          " (" +
+          plesk2.data.statusInfo.error +
+          ")";
         }
 
         if (vps1.data.pingInfo.avg > VHping) {
@@ -143,14 +159,18 @@ module.exports = async (client) => {
             vps1.data.pingInfo.avg +
             "ms)";
         }
-        if (vps1siteV.data.statusInfo.sitewebAccessible) {
+        if (vps1.data.statusInfo.sitewebAccessible) {
           var v1 =
             ":white_check_mark: | Serveur (" +
             vps1.data.pingInfo.avg +
             "ms)";
         }
         if (vps1.data.statusInfo.sitewebAccessible == false) {
-          var v1 = ":x: | Serveur";
+          var v1 = ":x: | Serveur Erreur: " +
+          vps1.data.statusInfo.statusCode +
+          " (" +
+          vps1.data.statusInfo.error +
+          ")";
         }
 
         if (panel.data.pingInfo.avg > VHping) {
@@ -165,14 +185,18 @@ module.exports = async (client) => {
             panel.data.pingInfo.avg +
             "ms)";
         }
-        if (panelsiteV.data.statusInfo.sitewebAccessible) {
+        if (panel.data.statusInfo.sitewebAccessible) {
           var pa =
             ":white_check_mark: | Panel (" +
             panel.data.pingInfo.avg +
             "ms) [[Visiter le site]](https://panel.netheberg.fr)";
         }
         if (panel.data.statusInfo.sitewebAccessible == false) {
-          var pa = ":x: | Panel";
+          var pa = ":x: | Panel Erreur: " +
+          panel.data.statusInfo.statusCode +
+          " (" +
+          panel.data.statusInfo.error +
+          ")";
         }
 
         if (cpanel1.data.pingInfo.avg > VHping) {
@@ -187,14 +211,18 @@ module.exports = async (client) => {
             cpanel1.data.pingInfo.avg +
             "ms)";
         }
-        if (cpanel1siteV.data.statusInfo.sitewebAccessible) {
+        if (cpanel1.data.statusInfo.sitewebAccessible) {
           var cp1 =
             ":white_check_mark: | CPanel (particulier) (" +
             cpanel1.data.pingInfo.avg +
             "ms) [[Vers le panel]](https://monpanel.info:2083)";
         }
         if (cpanel1.data.statusInfo.sitewebAccessible == false) {
-          var cp1 = ":x: | CPanel (particulier)";
+          var cp1 = ":x: | CPanel (particulier) Erreur: " +
+          cpanel1.data.statusInfo.statusCode +
+          " (" +
+          cpanel1.data.statusInfo.error +
+          ")";
         }
         embed.addField("\u200b", "\u200b");
         embed.addField(
