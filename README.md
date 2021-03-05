@@ -1,3 +1,5 @@
+<h1>⚠️ Depuis mon départ de NetHeberg en mars 2021, ce repository est en Read Only ! Pour les améliorations, veuillez vous référer à https://github.com/NetHeberg/NetBot/</h1>
+<hr>
 <p align="center">
   <img width="200" src="https://net-bot.tk/assets/images/image015d35.png?v98892078540061">
 </p>
