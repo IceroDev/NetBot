@@ -1,0 +1,10 @@
+{
+  "token": "BOT_TOKEN",
+  "serverID": "663370560696221698",
+  "channelID": "767832256005013524",
+  "reactionEmoji": "⭐",
+  "threshold": 5,
+  "hexcolor": "ecdd24",
+  "dateCutoff": 3,
+  "fetchLimit": 100
+}
