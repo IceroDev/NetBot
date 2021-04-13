@@ -1,7 +1,7 @@
 <h1>⚠️ Depuis mon départ de NetHeberg en mars 2021, ce repository est en Read Only ! Pour les améliorations, veuillez vous référer à https://github.com/NetHeberg/NetBot/</h1>
 <hr>
 <p align="center">
-  <img width="200" src="https://net-bot.tk/assets/images/image015d35.png?v98892078540061">
+  <img width="200" src="https://share.thehostingbot.xyz/9rRSvmz.png">
 </p>
 <h1 align="center">NetBot</h1>
 <h3 align="center">Le bot Discord du serveur communautaire de NetHeberg</h3>
