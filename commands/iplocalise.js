@@ -13,6 +13,13 @@ exports.run = async (client, message, args) => {
       "https://images.netheberg.fr/i/CWQ3SJzhtA6jLyUluDRpceBYXn7H25s4Ivf8mbP1Mdwrig9ZNoEFxTqkGVKO.png"
     )
     .setFooter("netheberg.fr");
+  if(obj.hosting ==false){
+    if(message.channel.type !=="dm"){
+    message.delete()
+    message.channel.send("Cette adresse IP est une adresse privée ! Vous ne pouvez pas demander des informations sur cette adresse en public. Demandez moi en message privé.")
+    return;
+    }
+  }
   if (obj.query == "144.91.111.136") {
     embed.setDescription(
       "• **Appartient à : **" +
